@@ -59,7 +59,7 @@
             </p>
             <p class="payDe" v-if="payTcoin>0">（使用{{payScore}}积分 + {{payTcoin}}T币兑入）</p>
             <p class="cc-des">
-              商品一经兑换，不可退换
+              商品一经兑换，不可退换!
             </p>
           </div>
           <div class="cc-btns">
