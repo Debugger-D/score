@@ -2,7 +2,7 @@
   <div class="goods_detail">
     <div class="hasapp" v-if="!hasapp">
       <p>1.微信等暂不支持打开第三方应用，进行兑换将跳转到下载界面，请根据引导操作。</p>
-      <p>2.若您已安装本应用，请进入浏览器后根据提示进入应用。</p>
+      <p>2.若您已安装本应用，请进入浏览器后根据提示进入应用。。</p>
     </div>
     <vSlider11  ref="bannerSlider11"></vSlider11>
     <div class="goodsContent">
