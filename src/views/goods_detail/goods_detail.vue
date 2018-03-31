@@ -2,7 +2,7 @@
   <div class="goods_detail">
     <div class="hasapp" v-if="!hasapp">
       <p>1.微信等暂不支持打开第三方应用，进行兑换将跳转到下载界面，请根据引导操作。</p>
-      <p>2.若您已安装本应用，请进入浏览器后根据提示进入应用</p>
+      <p>2.若您已安装本应用，请进入浏览器后根据提示进入应用。</p>
     </div>
     <vSlider11  ref="bannerSlider11"></vSlider11>
     <div class="goodsContent">
@@ -24,7 +24,7 @@
       说明：{{goodsDe.remark}}
     </div>
     <div class="goodsInfo">
-      <p v-for="item in goodsContent">
+      <p v-for="(item,key) in goodsContent">
         <img :src="item.fileUrl+'?imageView2/2/w/500'">
       </p>
     </div>
@@ -79,7 +79,6 @@
   import axios from 'axios';
   import store from '@/vuex/store';
   import { Toast } from 'mint-ui';
-  //import TrcActivity from '../../assets/common';
 
   import vSlider11 from '@/components/slider/slider-d'
   import vFixside from '@/components/fixside/fixside'
@@ -113,7 +112,7 @@
       }else{
         this_.hasapp=false;
       }
-      //this_.hasapp=true;
+      this_.hasapp=true;
       //banner
       axios.get(types.GOODSDETAIL,{ params: {goodsId:goodsId}}).then(function (data) {
         this_.goodsDe = data.data;
