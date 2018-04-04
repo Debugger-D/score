@@ -7,7 +7,7 @@
     <vSlider11  ref="bannerSlider11"></vSlider11>
     <div class="goodsContent">
       <p class="goodsName">{{goodsDe.goodsName}}</p>
-      <p class="alert">商品一经兑换，不可退换21213</p>
+      <p class="alert">商品一经兑换，不可退换/p>
       <div class="bot-all clearBoth">
         <div class="c-bo">
           <span class="price">{{goodsDe.priceScore | number}} 积分 </span>
