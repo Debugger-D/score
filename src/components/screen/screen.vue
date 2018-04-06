@@ -27,10 +27,10 @@
       ])
     },
     methods :{
-      //筛选
+      //筛选调用父级方法
       screen(type) {
         this.callback(type);
-      },
+      }
     }
   }
 </script>
