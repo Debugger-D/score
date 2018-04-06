@@ -31,7 +31,6 @@
 </template>
 <script>
   import * as types from '@/services/types'
-  //import * as methods from '@/util/common'
   import store from '@/vuex/store'
   import { mapGetters,mapState } from 'vuex'
   import axios from 'axios';
@@ -49,7 +48,7 @@
         queryData:'',
       }
     },
-    mounted:function () {
+    mounted: function () {
       document.body.scrollTop=0;
     	let this_=this;
       this_.queryData=this.$route.query;
@@ -58,7 +57,7 @@
         this_.addressList=data.data.infos;
       });
     },
-    methods:{
+    methods: {
       selected:function (id) {
       	if(this.queryData.goodsId){//从下单页跳转过来的
           let data=Object.assign(this.queryData,{addressId:id});
