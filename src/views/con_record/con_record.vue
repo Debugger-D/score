@@ -59,7 +59,7 @@
       <div v-else class="noData">
         <div class="icon">
         </div>
-        <p>您还没有兑换记录</p>
+        <p>您还没有兑换记录!</p>
       </div>
       <v-fixside :share="false" :home="true" :height="100"></v-fixside>
     </div>
