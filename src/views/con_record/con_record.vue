@@ -34,7 +34,7 @@
               <li @click="getList('1')">通兑记录</li>
               <li @click="getList('2')">兑换商品</li>
               <li @click="getList('3')">积分抽奖</li>
-              <!--<li @click="getList('lotteryIncome')">抽中积分</li>-->
+              <li @click="getList('5')">抽中积分</li>
               <li @click="getList('4')" style="border-bottom: none;">积分退款</li>
             </ul>
             <div class="tri"></div>
