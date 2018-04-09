@@ -54,7 +54,7 @@
             -{{item.tradeAmount | number}}
           </div>
         </li>
-        <li class="dataEnd" v-if="list.length>10">----已无更多数据----</li>
+        <li class="dataEnd" v-if="list.length>10">-----已无更多数据-----</li>
       </ul>
       <div v-else class="noData">
         <div class="icon">
