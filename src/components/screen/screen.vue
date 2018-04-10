@@ -19,7 +19,7 @@
   export default{
   	props: {
   		screenOne: '',
-  		callback: {}
+  		callback: {},
     },
     computed: {
       ...mapGetters([
