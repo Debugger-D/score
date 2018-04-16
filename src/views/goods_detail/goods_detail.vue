@@ -70,6 +70,7 @@
       </div>
     </div>
     <v-fixside :share="false" :home="true" :height="100"></v-fixside>
+    <v-popup></v-popup>
   </div>
 </template>
 
@@ -82,9 +83,10 @@
 
   import vSlider11 from '@/components/slider/slider-d'
   import vFixside from '@/components/fixside/fixside'
+  import vPopup from '@/components/screen/screen'
   export default {
     name: 'goods_detail',
-    components: {vSlider11, vFixside},
+    components: {vSlider11, vFixside, vPopup},
     data (){
       return {
         count          : 1,
