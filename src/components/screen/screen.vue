@@ -30,6 +30,10 @@
       //筛选调用父级方法
       screen(type) {
         this.callback(type);
+      },
+      //筛选调用父级方法
+      screenD(type) {
+        this.callback(type);
       }
     }
   }
