@@ -18,8 +18,8 @@ Vue.use(VueRouter);
 Vue.prototype.$http = axios;
 Vue.use(Mint);
 const router = new VueRouter({
-  mode: 'history',
-  base : '/credit_h5',
+//   mode: 'history',
+//   base : '/credit_h5',
   routes
 });
 //为每个路由配置不同title
