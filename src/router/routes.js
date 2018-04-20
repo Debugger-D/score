@@ -7,7 +7,6 @@ export default [
   {
     path: '/',
     name: '积分商城',
-    meta: { keepAlive: true },
     component: App.components.mall_home
   },
   {
