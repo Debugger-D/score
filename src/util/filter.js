@@ -155,7 +155,7 @@ Vue.filter( 'phone' , function(data) {
       data='95320';
       break;
     case "jd":
-      data="400-603-3600";
+      data="400-603-360";
   }
   return data
 });
