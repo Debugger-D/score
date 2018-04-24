@@ -14,7 +14,6 @@ const store = new Vuex.Store({
     totalCount:         0,
     activityId:         '',
     prizeDetai11:       {},
-		terminalType:       '',
     goodsState:         {
       noData: false,
       urlType: 'all',
