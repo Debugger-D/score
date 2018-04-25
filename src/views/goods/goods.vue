@@ -91,7 +91,6 @@
       if (routerId){
       	this.selectType(routerId)
       }else{
-				console.log('请求列表')
 				if (this.getState.goodsState.goodsList.length == 0){this.getGoodsListGoods();}
 			}
       //积分筛选区间
