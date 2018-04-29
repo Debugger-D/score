@@ -31,27 +31,7 @@ Vue.filter( 'time' , function(date,format) {
 	});
 	return format;
 });
-//订单状态
-Vue.filter( 'orderState' , function(data) {
-  switch (data){
-    case 1:
-      data='待发货';
-      break;
-    case 2:
-      data='待收货';
-      break;
-    case 3:
-      data='交易成功';
-      break;
-    case 4:
-      data='交易成功';
-      break;
-    case 5:
-      data='退货';
-      break;
-  }
-  return data
-});
+
 //物流状态
 Vue.filter( 'logiState' , function(data) {
   switch (data){
