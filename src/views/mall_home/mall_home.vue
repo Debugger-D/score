@@ -352,7 +352,6 @@
           display: inline-block;
           color: #fff;
           font-size:p2r(60);
-          /*font-weight: bold;*/
         }
         .record {
           line-height: p2r(60);
