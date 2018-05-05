@@ -12,7 +12,7 @@
           <router-link to="/con_record">
             <div class="flex-right">
               <p class="score">{{score | number}}</p>
-              <p class="r-myscore">我的积分 ></p>
+              <p class="r-myscore">我的积分></p>
             </div>
           </router-link>
         </div>
