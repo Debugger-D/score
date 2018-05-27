@@ -3,7 +3,7 @@
     <input type="text" placeholder="帐号" v-model="user.phone" > <br>
     <input type="text" placeholder="密码" v-model="user.password">
     <p>{{error}}</p>
-    <button @click="link">登录</button>
+    <button @click="link">登录1</button>
   </div>
 </template>
 
