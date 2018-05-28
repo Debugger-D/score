@@ -5,7 +5,7 @@
       <li :class="{active: screenOne == 'low'}" @click="screen('low')">从低到高</li>
       <li :class="{active: screenOne == 'high'}" @click="screen('high')">从高到低</li>
       <li :class="{active: screenOne == 'can'}" @click="screen('can')" v-if="getState.totalCount">我能兑换</li>
-      <li :class="{active: screenOne == item.id}" v-for="item in getState.screenList" @click="screen(item)">
+      <li :class="{active: screenOne == item.id}" v-for="item in getState.screenList" :key="item.id" @click="screen(item)">
         <span v-if="item.scoreMax">{{item.scoreMin}}-{{item.scoreMax}}</span>
         <span v-else>{{item.scoreMin}}以上</span>
       </li>
