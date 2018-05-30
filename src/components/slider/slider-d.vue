@@ -35,7 +35,6 @@
           autoHeight: true,
           pagination : '.swiper-pagination',
           paginationClickable :true,
-          observeParents:true,
           effect:'fade',
           // if you need use plugins in the swiper, you can config in here like this
           debugger: true,
