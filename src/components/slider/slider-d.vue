@@ -36,8 +36,6 @@
           pagination : '.swiper-pagination',
           paginationClickable :true,
           effect:'fade',
-          // if you need use plugins in the swiper, you can config in here like this
-          debugger: true,
         }
       }
     }
