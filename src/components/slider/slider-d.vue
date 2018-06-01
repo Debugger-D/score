@@ -7,6 +7,7 @@
           <img :src="banner.fileUrl+'?imageView2/2/h/500'"  alt="">
         <!--</a>-->
       </swiper-slide>
+      <!-- ... -->
       <!-- 以下配置均为可选（使用具名slot来确定并应用一些操作控件元素） -->
       <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
@@ -35,6 +36,8 @@
           autoHeight: true,
           pagination : '.swiper-pagination',
           paginationClickable :true,
+          mousewheelControl : false,
+          observeParents:true,
           effect:'fade',
         }
       }
