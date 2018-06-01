@@ -92,6 +92,7 @@ export const base64encode = function (str) {
  *
  * @return 数组下标  查找不到返回-1
  *
+ *
  * //单个特征查找
  * var index = findArray(arr, {id: '1'});
  * //多个特征全满足查找
