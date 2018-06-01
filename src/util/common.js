@@ -100,7 +100,6 @@ export const base64encode = function (str) {
  * 多个特征单个满足查找(只需满足其中一个)
  *var index = findArray(arr, {id: '1', name: '习大大'}, false);
  *
- *
  */
 export const findArray=function(array, feature, all = true) {
   for(let index in array) {
