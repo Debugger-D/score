@@ -103,7 +103,7 @@ export const base64encode = function (str) {
  *
  */
 export const findArray=function(array, feature, all = true) {
-  for(let index in array){
+  for(let index in array) {
     let cur = array[index];
     if(feature instanceof Object){
       let allRight = true;
@@ -116,7 +116,7 @@ export const findArray=function(array, feature, all = true) {
         }
       }
       if(allRight) return index;
-    }else{
+    }else {
       if(cur == feature){
         return index;
       }
