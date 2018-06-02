@@ -5,23 +5,23 @@
 //设置cookie
 export const setCookie=function (c_name,value,expiredays)
 {
-    var exdate=new Date();
+    let exdate=new Date();
     exdate.setDate(exdate.getDate()+expiredays);
     document.cookie=c_name+ "=" +escape(value)+ ((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
 };
 //删除cookie
 export const delCookie=function (name)
 {
-    var exp = new Date();
+    let exp = new Date();
     exp.setTime(exp.getTime() - 1);
-    var cval=getCookie(name);
+    let cval=getCookie(name);
     if(cval!=null)
         document.cookie= name + "="+cval+";expires="+exp.toGMTString();
 };
 //获取cookie
 export const getCookie=function(name)
 {
-    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    let arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
     if(arr=document.cookie.match(reg))
         return unescape(arr[2]);
     else
@@ -30,7 +30,7 @@ export const getCookie=function(name)
 
 //分享编码
 export const utf16to8 = function (str) {
-  var out, i, len, c;
+  let out, i, len, c;
 
   out = "";
   len = str.length;
@@ -50,9 +50,9 @@ export const utf16to8 = function (str) {
   return out;
 };
 export const base64encode = function (str) {
-  var base64EncodeChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
-  var out, i, len;
-  var c1, c2, c3;
+  let base64EncodeChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+  let out, i, len;
+  let c1, c2, c3;
 
   len = str.length;
   i = 0;
@@ -94,11 +94,11 @@ export const base64encode = function (str) {
  *
  *
  * //单个特征查找
- * var index = findArray(arr, {id: '1'});
+ * let index = findArray(arr, {id: '1'});
  * //多个特征全满足查找
- * var index = findArray(arr, {id: '1', name: 'cmx'});
+ * let index = findArray(arr, {id: '1', name: 'cmx'});
  * 多个特征单个满足查找(只需满足其中一个)
- *var index = findArray(arr, {id: '1', name: '习大大'}, false);
+ *let index = findArray(arr, {id: '1', name: '习大大'}, false);
  *
  *
  */
