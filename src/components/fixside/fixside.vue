@@ -8,7 +8,6 @@
   </div>
 </template>
 <script>
-  //import * as methods from '@/util/common'
   export default{
   	props:{
   		share:false,
