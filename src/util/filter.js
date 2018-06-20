@@ -86,9 +86,6 @@ Vue.filter( 'track' , function(data) {
     case "ZTO":
       data = '中通速递';
       break;
-    case "RFD":
-      data = '如风达';
-      break;
     case "EMS":
       data = 'EMS';
       break;
