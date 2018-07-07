@@ -1,6 +1,5 @@
 import App from '../App'
 import axios from 'axios';
-//import TrcActivity from '../assets/common';
 import * as methods from '@/util/common'
 import store from '@/vuex/store'
 export default [
