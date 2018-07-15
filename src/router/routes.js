@@ -9,6 +9,11 @@ export default [
     component: App.components.mall_home
   },
   {
+    path: '*',
+    name: '积分商城',
+    component: App.components.mall_home
+  },
+  {
     path: '/goods_detail',
     name: '积分商城',
     component: App.components.goods_detail
