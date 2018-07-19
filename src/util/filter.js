@@ -3,7 +3,7 @@
  */
 
 import Vue from 'vue'
-//毫秒转时间
+// 毫秒转时间
 Vue.filter( 'time' , function(date,format) {
 	date = new Date(date);
 	var map = {
