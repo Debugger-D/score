@@ -1,11 +1,15 @@
 import App from '../App'
 import axios from 'axios';
-//import TrcActivity from '../assets/common';
 import * as methods from '@/util/common'
 import store from '@/vuex/store'
 export default [
   {
     path: '/',
+    name: '积分商城',
+    component: App.components.mall_home
+  },
+  {
+    path: '*',
     name: '积分商城',
     component: App.components.mall_home
   },

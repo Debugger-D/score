@@ -6,7 +6,6 @@
         <img src="https://testimg.trc.com/Fnf2_klxTmy737u3GOYV0kOgciii" alt="">
         <img src="https://testimg.trc.com/FhcuxxoOQXPOfVonT_Pm48LFdeAQ" alt="">
         <img src="https://testimg.trc.com/FiO0xBPqPSA0pV8O2ue_KLtWInZg" alt="">
-        <img src="https://testimg.trc.com/FoTmVxk6OxFyJh7o8aNwvcYT0_IY" alt="">
         <img src="https://testimg.trc.com/FrXsLbzsYC4ifsFgkXfZXlX7FKYP" alt="">
         <img src="https://testimg.trc.com/FpQ8WnweLp3a8oOsgHAhdMMUKiTD" alt="">
       </div>

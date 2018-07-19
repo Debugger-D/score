@@ -1,5 +1,5 @@
 	//接口base路径
-const scoreapi ='/api/v1/credit/';
+const scoreapi ='/credit/';
 const serverapi='/server/credit/';
 const accountapi='/account/';
 

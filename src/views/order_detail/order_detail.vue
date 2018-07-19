@@ -1,7 +1,7 @@
 <template>
   <div class="order_detail">
     <div class="orderNum">
-      <span>订单号: {{order.orderNum}}</span>
+      <span>订单号:{{order.orderNum}}</span>
       <span class="status">{{order.orderState | orderState}}</span>
     </div>
     <div class="padding"></div>
