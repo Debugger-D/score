@@ -11,7 +11,6 @@
     <div class="f-title">
       <div class="ft-main">
         <img class="ftm-gift" src="./../../assets/images/activity/gift.png" alt="">
-        <!--<p class="ftm-text" v-if="!isLogin">您暂未登录请 <span class="c-9E240D" @click="loginApp">立即登录</span></p>-->
         <p class="ftm-text">
           <span v-if="freeTime.freeLotteryTimes!==0">免费次数 <span class="c-9E240D">{{freeTime.freeLotteryTimes}}</span> ,</span>
           剩余积分 <span class="c-9E240D">{{score}}</span>个
@@ -72,7 +71,7 @@
       <div class="fl-mine">
         <div class="flm-hid">
           <ul :style="{marginTop: marginTop+'px'}" class="sliderUp" ref="abc">
-            <li v-for="item in winList">
+            <li v-for="item in winList" :key="item.id">
               <span>{{item.lotteryPhone.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2')}}</span>
               <span class="pr-mr">{{item.prizeName}}</span>
             </li>
@@ -84,7 +83,7 @@
     <div class="f-super" v-if="goodsList.length>0">
       <h2 class="fs-title c-B91A1F">超值换购</h2>
       <ul class="fs-list">
-        <li v-for="item in goodsList">
+        <li v-for="item in goodsList" :key="item.id">
           <router-link :to="{ path: '/goods_detail', query: { id: item.id}}">
             <div class="fsl-img">
               <img :src="item.mediumImg" alt="">
@@ -195,7 +194,7 @@
             <span class="frth-name">获得的奖品</span>
             <span class="frth-date">获得日期</span>
           </li>
-          <li class="frt-body" v-for="item in myRecord">
+          <li class="frt-body" v-for="item in myRecord" :key="item.id">
             <span class="t-name">{{item.prizeName}}
               <span class="tn-setAdd" v-if="item.code">卡密：{{item.code}}</span>
               <span class="tn-setAdd" v-if="item.prizeType==='GOODS' && item.goodsType==='MATERIAL' && !item.address" @click="addAddress(item)">添加地址></span>
@@ -900,13 +899,11 @@
           .frth-name{
             display: inline-block;
             width: p2r(250);
-            float: left;
             text-align: left;
           }
           .frth-date{
             display: inline-block;
             width: p2r(150);
-            float: right;
           }
         }
         .frt-body{
@@ -918,7 +915,6 @@
           .t-date{
             display: inline-block;
             width: p2r(150);
-            float: right;
             text-align: center;
           }
         }
