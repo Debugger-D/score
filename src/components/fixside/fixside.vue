@@ -41,7 +41,7 @@
         this.$router.push({path:'/mall_home'})
       },
       shareMe(){
-        /*let image = 'https://jf.trc.com/credit_front/img/share.png';
+        let image = 'https://jf.trc.com/credit_front/img/share.png';
         let href = 'trc://share?params=' +
           methods.base64encode(methods.utf16to8(JSON.stringify([{
               "title": "",
@@ -51,7 +51,7 @@
             }])
           ));
         console.log(href)
-        window.location.href = href*/
+        window.location.href = href
       }
     },
     mounted() {
