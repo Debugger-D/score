@@ -59,10 +59,12 @@
     },
     methods: {
       selected:function (id) {
-      	if(this.queryData.goodsId){//从下单页跳转过来的
+        //从下单页跳转过来的
+      	if(this.queryData.goodsId){
           let data=Object.assign(this.queryData,{addressId:id});
           this.$router.replace({path:'/order',query:data})
-        }else if(this.queryData.orderNum){//从活动页跳转过来的
+          //从活动页跳转过来的
+        }else if(this.queryData.orderNum){
           let data=Object.assign(this.queryData,{addressId:id,id:this.activityId});
           this.$router.replace({path:'/activity',query:data})
         }else{
