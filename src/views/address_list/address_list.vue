@@ -8,7 +8,7 @@
 
     <div class="address11">
       <ul>
-        <li class="clearfix" v-for="address in addressList ">
+        <li class="clearfix" v-for="address in addressList " :key="address.id">
           <div class="address" @click="selected(address.id)">
             <div class="left">
               <div class="left-t">
