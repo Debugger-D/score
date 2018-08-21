@@ -103,7 +103,7 @@ const store = new Vuex.Store({
       state.goodsState.categoryType.classificationId = el;
       console.log(state.goodsState.categoryType, el)
     },
-    //商品列表请求参数
+    // 商品列表请求参数
     SET_SCORESCREENGOODS (state, el) {
       state.goodsState.params = el;
     },
