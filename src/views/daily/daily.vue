@@ -1,19 +1,6 @@
 <template>
     <div class="daily">
-      <!--<div>
-        <img src="https://jfimg.tairanmall.com/Fkhf1osv68FlE9RBaU37LVcggC33" alt="">
-        <img src="https://testimg.trc.com/FjiI247gaXfV5Fun9VpPU5wUMEE2" alt="">
-        <img src="https://testimg.trc.com/Fnf2_klxTmy737u3GOYV0kOgciii" alt="">
-        <img src="https://testimg.trc.com/FhcuxxoOQXPOfVonT_Pm48LFdeAQ" alt="">
-        <img src="https://testimg.trc.com/FiO0xBPqPSA0pV8O2ue_KLtWInZg" alt="">
-        <img src="https://testimg.trc.com/FrXsLbzsYC4ifsFgkXfZXlX7FKYP" alt="">
-        <img src="https://testimg.trc.com/FpQ8WnweLp3a8oOsgHAhdMMUKiTD" alt="">
-      </div>
-      <div class="confirm">
-        <router-link to="/address_list">
-          <img src="https://testimg.trc.com/FgHf_kOUtWVzEED7vHkCoDMiwacB" alt="" class="btn">
-        </router-link>
-      </div>-->
+      123
     </div>
 </template>
 <script>
@@ -36,9 +23,6 @@
     width: 100%;
     float: left;
     padding: 0;
-  }
-  div{
-    /*background: black;*/
   }
   .video{
     padding: 0;

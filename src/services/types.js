@@ -77,4 +77,4 @@ export const  ACTIVITY = scoreapi+'activityPage/list';
 //积分筛选区间
 export const  SCREEN = scoreapi+'scoreSection/list';
 //积分筛选设置
-export const  SCREEN = scoreapi+'scoreSection/listSet';
+export const  SCREENSET = scoreapi+'scoreSection/listSet';

@@ -10,7 +10,6 @@ import routes from './router/routes'
 import 'mint-ui/lib/style.css'
 import store from './vuex/store'
 import filter from './util/filter'
-import { Loadmore } from 'mint-ui';
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter);
