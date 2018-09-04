@@ -232,7 +232,6 @@
         .left-t{
           .phone{
             display: inline-block;
-            float: right;
           }
         }
         .left-b{
