@@ -22,13 +22,14 @@
 </template>
 <script>
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
+  import 'swiper/dist/css/swiper.css'
   export default{
     components:{swiper,swiperSlide},
     //props:['banner'],
     data(){
       return{
         //必须先把参数写进去 要不然刷新加载贼慢
-//        banner:[{imgUrl:"",targetUrl:'https://jf.trc.com/credit_h5'}],
+        //banner:[{imgUrl:"",targetUrl:'https://jf.trc.com/credit_h5'}],
         swiperOption: {
           // 如果你后续需要找到当前实例化后的swiper对象以对其进行一些操作的话，可以自定义配置一个名字
           name: 'currentSwiper',

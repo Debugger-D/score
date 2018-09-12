@@ -1,44 +1,71 @@
 <template>
-    <div class="daily">
-      123
-    </div>
+  <swiper :options="swiperOption" class="swiper-box">
+    <swiper-slide class="swiper-item">Slide 1</swiper-slide>
+    <swiper-slide class="swiper-item">Slide 2</swiper-slide>
+    <swiper-slide class="swiper-item">Slide 3</swiper-slide>
+    <swiper-slide class="swiper-item">Slide 4</swiper-slide>
+    <swiper-slide class="swiper-item">Slide 5</swiper-slide>
+    <swiper-slide class="swiper-item">Slide 6</swiper-slide>
+    <swiper-slide class="swiper-item">Slide 7</swiper-slide>
+    <swiper-slide class="swiper-item">Slide 8</swiper-slide>
+    <swiper-slide class="swiper-item">Slide 9</swiper-slide>
+    <swiper-slide class="swiper-item">Slide 10</swiper-slide>
+    <div class="swiper-button-prev" slot="button-prev"></div>
+    <div class="swiper-button-next" slot="button-next"></div>
+  </swiper>
 </template>
+
 <script>
-  export default{
-    data () {
+  import { swiper, swiperSlide } from 'vue-awesome-swiper'
+  export default {
+    components: { swiper, swiperSlide },
+    data() {
       return {
-        msg: 'hello vue'
+        swiperOption: {
+          freeMode: false,
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          prevButton:'.swiper-button-prev',
+          nextButton:'.swiper-button-next'
+        }
       }
     }
   }
 </script>
-<style rel="stylesheet/scss" lang="scss" scoped>
-  @function p2r ($px){
-    @return $px/75 + rem;
+
+<style lang="scss">
+  html,body {
+    position: relative;
+    height: 100%;
   }
-  .daily{
-    overflow: hidden;
+  body {
+    background: #eee;
   }
-  img{
+  .swiper-box {
     width: 100%;
-    float: left;
-    padding: 0;
+    height: 200px;
+    margin: 0 auto;
   }
-  .video{
-    padding: 0;
-    margin: 0;
-    background: black;
-  }
-  .confirm{
-    height: p2r(166);
+  .swiper-item {
+    height: 100%;
+    text-align: center;
+    font-size: 18px ;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
-    width: 100%;
-    background: url("https://testimg.trc.com/FmNcu9R1ac0gN0xiNyprta0u1HCg") 0 0 / 100% no-repeat;
-    /*background-size: 100%;*/
-    .btn{
-      width: p2r(340);
-    }
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
   }
 </style>
