@@ -22,7 +22,7 @@
       <div class="bannerList">
         <div class="inletList">
           <ul>
-            <li v-for="item in showList">
+            <li v-for="item in showList" :key="item.id">
               <a :href="item.targetUrl">
                 <img :src="item.imgUrl" alt="">
                 <span>{{item.title}}</span>
@@ -82,7 +82,7 @@
       </div>
       <mt-loadmore :bottom-method="loadBottom"  :bottom-all-loaded="getState.mallHomeState.allLoaded" :auto-fill="false"  ref="loadmore">
         <ul class="g-main">
-          <li class="clearBoth" v-for="(item,index) in getState.mallHomeState.goodsList">
+          <li class="clearBoth" v-for="item in getState.mallHomeState.goodsList" :key="item.id">
             <router-link  :to="{ path: '/goods_detail', query: { id: item.id}}">
               <div class="pull-left">
                 <a href="javascript:;">
@@ -136,6 +136,7 @@
   import vFixside from '@/components/fixside/fixside'
   import vNotice from '@/components/slider/slider-notice'
   import vScreen from '@/components/screen/screen'
+import { setTimeout } from 'timers';
 
   export default {
     name: 'mall_home',
@@ -163,6 +164,11 @@
       }
     },*/
     mounted:function(){
+      console.log(window.resolveLocalFileSystemURL())
+      document.addEventListener("deviceready", onDeviceReady, false);
+      function onDeviceReady() {
+        console.log(cordova.file);
+      }
       document.body.scrollTop = this.getState.mallHomeState.offsetHeight;
       let this_ = this;
       //入口管理
@@ -325,7 +331,6 @@
           height: p2r(55);
           .icon-problem{
             display: inline-block;
-            float: right;
             position: absolute;
             right: p2r(21);
             top:p2r(20);
