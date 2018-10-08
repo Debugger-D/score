@@ -136,7 +136,6 @@
   import vFixside from '@/components/fixside/fixside'
   import vNotice from '@/components/slider/slider-notice'
   import vScreen from '@/components/screen/screen'
-import { setTimeout } from 'timers';
 
   export default {
     name: 'mall_home',
@@ -164,11 +163,6 @@ import { setTimeout } from 'timers';
       }
     },*/
     mounted:function(){
-      console.log(window.resolveLocalFileSystemURL())
-      document.addEventListener("deviceready", onDeviceReady, false);
-      function onDeviceReady() {
-        console.log(cordova.file);
-      }
       document.body.scrollTop = this.getState.mallHomeState.offsetHeight;
       let this_ = this;
       //入口管理
