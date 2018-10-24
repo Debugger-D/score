@@ -23,7 +23,7 @@
     <div class="con_record">
       <div class="c-title">
         <span class="ct-des">积分明细</span>
-        <div class="ct-types" @click="">
+        <div class="ct-types">
           <div @click="beSelect">
             <span>{{recordType}}</span>
             <img :class="{slow: isSelect}" src="../../assets/images/personal/down.png" alt="">
@@ -42,7 +42,7 @@
         </div>
       </div>
       <ul class="record-list" v-if="list.length>0">
-        <li class="clearBoth" v-for="item in list">
+        <li class="clearBoth" v-for="item in list" :key="item.id">
           <div class="left fl">
             <p class="title">{{item.tradeName}}</p>
             <p class="time">{{item.tradeTime | time('yyyy.MM.dd  hh:mm:ss')}}</p>

@@ -24,7 +24,7 @@
       说明：{{goodsDe.remark}}
     </div>
     <div class="goodsInfo">
-      <p v-for="(item,key) in goodsContent">
+      <p v-for="item in goodsContent" :key="item.id">
         <img :src="item.fileUrl+'?imageView2/2/w/500'">
       </p>
     </div>

@@ -15,7 +15,7 @@
       <div class="gm-left">
         <ul class="gml-types">
           <li :class="{active: getState.goodsState.categoryType.classificationId == ''}"  @click="selectType()">全部</li>
-          <li :class="{active: getState.goodsState.categoryType.classificationId == item.id}" v-for="item in getState.goodsState.classcification" @click="selectType(item.id)">
+          <li :class="{active: getState.goodsState.categoryType.classificationId == item.id}" v-for="item in getState.goodsState.classcification" :key="item.id" @click="selectType(item.id)">
             {{item.classificationName}}
           </li>
         </ul>
@@ -23,7 +23,7 @@
       <div class="gm-right">
         <mt-loadmore :bottom-method="loadBottom"  :bottom-all-loaded="getState.goodsState.allLoaded" :auto-fill="false"  ref="loadmore">
           <ul class="gmr-main">
-            <li class="clearBoth" v-for="(item,index) in getState.goodsState.goodsList">
+            <li class="clearBoth" v-for="item in getState.goodsState.goodsList" :key="item.id">
               <router-link  :to="{ path: '/goods_detail', query: { id: item.id}}">
                 <div class="pull-left">
                   <a href="javascript:;">
