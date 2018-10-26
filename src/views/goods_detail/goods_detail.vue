@@ -215,7 +215,7 @@
           if(this.count*this.goodsDe.priceScore>(this.score + this.tcoin)){
             this.status=2
           }else{
-           //应付款小于积分
+            //应付款小于积分
             if (this.count*this.goodsDe.priceScore <= this.score){
               this.payScore = this.count*this.goodsDe.priceScore;
               this.payTcoin = 0;

@@ -20,7 +20,7 @@
     </div>
     <div class="list">
       <ul  v-if="list.length>0">
-        <li v-for="item in list">
+        <li v-for="item in list" :key="item.id">
           <router-link  :to="{path:'/order_detail',query:{id:item.id}}">
             <div class="content clearfix">
               <div class="pull-left">
