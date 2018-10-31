@@ -25,7 +25,7 @@
       </div>
       <div class="detail">
         <ul>
-          <li v-for="(item,index) in message" :class="{'color-blue':index==0}">
+          <li v-for="(item,index) in message" :key="item.id" :class="{'color-blue':index==0}">
             <div class="logcon clearBoth">
               <div class="first" v-if="index==0">
                 <span></span>
@@ -46,7 +46,7 @@
               <div class="right">包裹正在揽收</div>
             </div>
             <div class="time">
-              &nbsp
+              &nbsp;
             </div>
           </li>
         </ul>
