@@ -157,7 +157,6 @@
               width: p2r(32);
               height: p2r(32);
               padding: p2r(4);
-              float: left;
               box-sizing: border-box;
               background-color: #CAF0FF;
               border-radius: 50%;
@@ -176,7 +175,6 @@
               display: inline-block;
               width: p2r(16);
               height: p2r(16);
-              float: left;
               box-sizing: border-box;
               background-color: #e4e4e4;
               border-radius: 50%;
@@ -185,7 +183,6 @@
               line-height: p2r(40);
               font-size: p2r(28);
               display: inline-block;
-              float: left;
               padding-left: p2r(45);
               width: p2r(600);
             }
