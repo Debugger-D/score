@@ -13,6 +13,7 @@
 <script>
 export default {
   components: {},
+
   data () {
     return {
       users: {}
@@ -37,7 +38,7 @@ export default {
     // 可以通过 Object.freeze 方法来冻结一个对象，一旦被冻结的对象就再也不能被修改了。
     this.users = Object.freeze(users);
   },
-  mounted () {},
+
   methods: {},
 
   beforeDestroy() {
